@@ -28,6 +28,7 @@ namespace WebApplication1
                     xp.Parameters.AddWithValue("@Autor", TextBox2.Text);
                     xp.Parameters.AddWithValue("@IloscEgzemplarzy", TextBox3.Text);
 
+
                     vid.Open(); //otwierm połączenie z Baza Danych
                     xp.ExecuteNonQuery(); //wykonuje zapytanie
                     vid.Close(); //kończę połączenie z bazą
